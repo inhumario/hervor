@@ -1,6 +1,6 @@
-# Hervor — web de afiliados de Amazon (café y té en casa)
+# Punto de Infusión (antes «Hervor») — web de afiliados de Amazon (café y té en casa)
 
-Proyecto propio de Mario (28-09-2026). Web estática en **https://hervor.inhumario.com**, marca propia «Hervor»; cuando funcione se le compra dominio propio (basta con cambiar `url` en `config.json` y redirigir).
+Proyecto propio de Mario (28-09-2026). Web estática en **https://puntodeinfusion.inhumario.com**, marca propia «Punto de Infusión» (se llamó «Hervor» unas horas; carpeta, repo y servicio conservan ese nombre); cuando funcione se le compra dominio propio (basta con cambiar `url` en `config.json` y redirigir).
 
 ## Cómo se trabaja
 
@@ -14,7 +14,7 @@ python3 scripts/comprobar_asins.py              # revisa que los ASIN enlazados 
 python3 scripts/deploy_easypanel.py [deploy]    # despliegue (push a GitHub + redeploy)
 ```
 
-La etiqueta de afiliado va en `config.json` → `amazon_tag` (p. ej. `hervor-21`). Mientras esté vacía, los enlaces salen sin etiqueta.
+La etiqueta de afiliado va en `config.json` → `amazon_tag` (p. ej. `puntodeinfusion-21`). Mientras esté vacía, los enlaces salen sin etiqueta.
 
 ## Formato de un artículo — `content/articulos/<slug>.md`
 

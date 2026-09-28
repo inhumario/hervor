@@ -1,6 +1,6 @@
-# Hervor — web de afiliados de Amazon (café y té en casa)
+# Punto de Infusión (antes «Hervor») — web de afiliados de Amazon (café y té en casa)
 
-Proyecto propio de Mario (desde 2026-09-28). Web estática **https://hervor.inhumario.com** con marca propia «Hervor»: comparativas y guías de cafeteras, molinillos, hervidores, teteras y accesorios con enlaces de afiliado a Amazon.es. Cuando haya tracción, dominio propio (cambiar `url` en `config.json`).
+Proyecto propio de Mario (desde 2026-09-28). Web estática **https://puntodeinfusion.inhumario.com** con marca propia «Punto de Infusión» (se llamó «Hervor» unas horas; carpeta, repo y servicio conservan ese nombre): comparativas y guías de cafeteras, molinillos, hervidores, teteras y accesorios con enlaces de afiliado a Amazon.es. Cuando haya tracción, dominio propio (cambiar `url` en `config.json`).
 
 ## Empieza siempre por
 1. `README.md` — comandos, formato de artículos y **reglas de contenido** (cumplimiento del Programa de Afiliados de Amazon: nada de precios exactos, estrellas ni imágenes de Amazon; nada de «lo he probado»).

@@ -1,4 +1,4 @@
-# Hervor — estado (28-09-2026)
+# Punto de Infusión — estado (28-09-2026)
 
 ## Hecho
 
@@ -6,8 +6,8 @@
 - Fichas de producto sin imágenes ni precios (cumplimiento Amazon sin PA-API), tabla resumen automática, FAQ con datos estructurados, migas, Article/Breadcrumb/FAQPage schema, sitemap, robots, RSS, 404.
 - Páginas: Quiénes somos, Cómo elegimos, Afiliación (texto obligatorio de Amazon), Aviso legal, Privacidad y Cookies.
 - Artículos de lanzamiento en `content/articulos/` (comparativas y guías de café, té y accesorios) con productos reales de amazon.es: ≥4,3★, ≥100 opiniones y ficha descargada.
-- Despliegue: GitHub `inhumario/hervor` → EasyPanel `travelia/hervor` → https://hervor.inhumario.com.
-- **Search Console**: propiedad `sc-domain:hervor.inhumario.com` verificada por TXT en tu cuenta de Google y sitemap enviado (`scripts/gsc_alta.py`). **IndexNow** (Bing/Yandex) avisado con las 26 URLs (`scripts/indexnow.py`, repetir tras cada publicación).
+- Despliegue: GitHub `inhumario/hervor` → EasyPanel `travelia/hervor` → https://puntodeinfusion.inhumario.com.
+- **Search Console**: propiedad `sc-domain:puntodeinfusion.inhumario.com` verificada por TXT en tu cuenta de Google y sitemap enviado (`scripts/gsc_alta.py`). **IndexNow** (Bing/Yandex) avisado con las 26 URLs (`scripts/indexnow.py`, repetir tras cada publicación).
 - Vigilante semanal de productos (`scripts/comprobar_asins.py --email`, cron los lunes) que avisa por email si un producto se agota, desaparece o baja de 4★.
 
 ## Depende de Mario: alta en Afiliados de Amazon (10-15 min)
@@ -16,9 +16,9 @@ Hay que hacerla con tu identidad (acepta el contrato y la entrevista fiscal), as
 
 1. Entra en **https://afiliados.amazon.es** → «Registrarse». Mejor con **tu cuenta personal** de Amazon, no con la de vendedor de Aromas.
 2. **Beneficiario**: Mario Cuadrado López, Calle Marchanilla 3, 45100 Sonseca (Toledo). Teléfono móvil tuyo (te llama o manda un PIN).
-3. **Sitios web**: `https://hervor.inhumario.com`. Apps: ninguna.
+3. **Sitios web**: `https://puntodeinfusion.inhumario.com`. Apps: ninguna.
 4. **Perfil**:
-   - ID de tienda preferido: **hervor-21** (si está cogido, `hervorcafe-21`).
+   - ID de tienda preferido: **puntodeinfusion-21** (si está cogido, `puntoinfusion-21`).
    - ¿De qué tratan tus sitios web?: «Guías y comparativas de cafeteras, molinillos, hervidores, teteras y accesorios para preparar café y té en casa.»
    - Temas: Hogar y cocina (y Alimentación si lo pide).
    - Tipo de sitio: blog / sitio de comparativas.
