@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/static/fuentes/fraunces-600.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/static/fuentes/fraunces-700.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/static/fuentes/inter-400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/static/fuentes/inter-500.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/static/fuentes/inter-600.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+:root{--titulo:#0E4A31;--sub:#1F7A50;--filete:#35996A;--cab:#EAF4EE;--zebra:#F5FAF7;--borde:#C9DED3;--texto:#1F2D26;--suave:#4E6158;--fondo:#FFFFFF;--acento:#C8742B;--acento-h:#A95F1F;--btn-texto:#fff}
+@media (prefers-color-scheme:dark){:root{--titulo:#9FE0BD;--sub:#7FD1A6;--filete:#35996A;--cab:#15281F;--zebra:#111F18;--borde:#2A4436;--texto:#E3EEE8;--suave:#A9BDB2;--fondo:#0B1611;--acento:#E08A3E;--acento-h:#F09A4E}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--fondo);color:var(--texto);font:17px/1.65 Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+a{color:var(--sub)}
+img{max-width:100%;height:auto}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;color:var(--titulo);line-height:1.2;letter-spacing:-.01em}
+h1{font-size:clamp(1.8rem,4.5vw,2.6rem);margin:.4em 0 .3em}
+h2{font-size:clamp(1.35rem,3vw,1.7rem);margin:2em 0 .6em;padding-bottom:.25em;border-bottom:2px solid var(--filete)}
+h3{font-size:1.2rem;margin:1.6em 0 .4em}
+.contenedor{max-width:1080px;margin:0 auto;padding:0 24px}
+.articulo{max-width:760px}
+/* cabecera */
+.cab{border-bottom:1px solid var(--borde);background:var(--fondo);position:sticky;top:0;z-index:10}
+.cab-in{display:flex;align-items:center;justify-content:space-between;min-height:62px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font:700 1.4rem Fraunces,Georgia,serif;color:var(--titulo);text-decoration:none}
+.cab nav{display:flex;gap:22px}
+.cab nav a{color:var(--texto);text-decoration:none;font-weight:500}
+.cab nav a:hover{color:var(--sub)}
+.menu-btn{display:none;font-size:1.6rem;cursor:pointer;color:var(--titulo)}
+@media (max-width:720px){
+  .menu-btn{display:block}
+  .cab nav{display:none;position:absolute;top:62px;left:0;right:0;flex-direction:column;gap:0;background:var(--fondo);border-bottom:1px solid var(--borde)}
+  .cab nav a{padding:14px 24px;border-top:1px solid var(--borde)}
+  #menu:checked~nav{display:flex}
+}
+/* portada */
+.hero{background:var(--cab);padding:56px 0 48px;border-bottom:1px solid var(--borde)}
+.hero h1{max-width:760px}
+.hero p{max-width:640px;font-size:1.1rem;color:var(--suave)}
+.hero-kicker{text-transform:uppercase;letter-spacing:.12em;font-size:.8rem!important;font-weight:600;color:var(--sub)!important;margin:0}
+h2.sec{border:0;margin-top:1.8em}
+.rejilla{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
+.tarjeta{display:flex;flex-direction:column;border:1px solid var(--borde);border-radius:12px;padding:20px;text-decoration:none;color:var(--texto);background:var(--fondo);transition:border-color .15s,transform .15s}
+.tarjeta:hover{border-color:var(--filete);transform:translateY(-2px)}
+.tarjeta h3{margin:.3em 0 .4em;font-size:1.15rem}
+.tarjeta p{margin:0 0 12px;color:var(--suave);font-size:.95rem;flex:1}
+.tarjeta-cat{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;font-weight:600;color:var(--sub)}
+.tarjeta-mas{font-weight:600;color:var(--sub);font-size:.9rem}
+.ver-todo{margin:14px 0 8px}
+.portada-cat{padding-bottom:40px}
+.relacionados{padding:10px 24px 48px}
+/* artículo */
+.migas{font-size:.85rem;color:var(--suave);margin-top:28px}
+.migas a{color:var(--suave)}
+.entradilla{font-size:1.15rem;color:var(--suave);margin-top:0}
+.meta{font-size:.9rem;color:var(--suave)}
+.aviso-art{font-size:.85rem;background:var(--zebra);border-left:3px solid var(--filete);padding:10px 14px;border-radius:0 8px 8px 0;color:var(--suave)}
+.cuerpo ul,.cuerpo ol{padding-left:1.3em}
+.cuerpo li{margin:.3em 0}
+.cuerpo blockquote{margin:1.4em 0;padding:12px 18px;background:var(--cab);border-left:4px solid var(--filete);border-radius:0 8px 8px 0}
+.cuerpo blockquote p{margin:.3em 0}
+.tabla-wrap,.cuerpo table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.95rem}
+.tabla-wrap table{display:table}
+th{background:var(--cab);color:var(--titulo);text-align:left;font-weight:600}
+th,td{padding:10px 12px;border-bottom:1px solid var(--borde);vertical-align:top}
+tbody tr:nth-child(even){background:var(--zebra)}
+table.resumen td:first-child{font-weight:700;color:var(--sub)}
+/* producto */
+.producto{border:1px solid var(--borde);border-radius:14px;padding:22px;margin:28px 0;background:var(--fondo);box-shadow:0 1px 0 var(--borde)}
+.producto-cab{display:flex;gap:14px;align-items:flex-start}
+.producto-cab h3{margin:.15em 0 .1em}
+.num{flex:none;width:38px;height:38px;border-radius:50%;background:var(--titulo);color:var(--fondo);display:grid;place-items:center;font:700 1.05rem Fraunces,Georgia,serif}
+.badge{display:inline-block;background:var(--cab);color:var(--sub);border:1px solid var(--borde);font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;padding:2px 10px;border-radius:99px}
+.valoracion{margin:0;font-size:.9rem;color:var(--suave)}
+.para{margin:14px 0 6px}
+.proscontras{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:12px 0 18px}
+.proscontras h4{margin:0 0 4px;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em}
+.pros h4{color:var(--sub)}.contras h4{color:var(--acento)}
+.proscontras ul{margin:0;padding-left:1.1em;font-size:.95rem}
+@media (max-width:600px){.proscontras{grid-template-columns:1fr}.producto{padding:18px}}
+.btn{display:inline-block;background:var(--acento);color:var(--btn-texto);text-decoration:none;font-weight:600;padding:12px 22px;border-radius:10px;transition:background .15s}
+.btn:hover{background:var(--acento-h)}
+.btn-sm{padding:6px 12px;font-size:.85rem;white-space:nowrap}
+/* faq, autor */
+.faq details{border:1px solid var(--borde);border-radius:10px;padding:12px 16px;margin:10px 0}
+.faq summary{font-weight:600;cursor:pointer;color:var(--titulo)}
+.faq details p{margin:.6em 0 .2em}
+.autor{margin:40px 0 20px;padding:18px 20px;background:var(--cab);border-radius:12px}
+.autor p{margin:.3em 0 0;color:var(--suave);font-size:.95rem}
+/* pie */
+.pie{margin-top:40px;border-top:1px solid var(--borde);background:var(--zebra);padding:28px 0;font-size:.9rem;color:var(--suave)}
+.pie-marca{color:var(--texto)}
+.pie-links{display:flex;flex-wrap:wrap;gap:8px 18px}
+.pie-links a{color:var(--suave)}
+@media (max-width:600px){.contenedor{padding:0 16px}body{font-size:16.5px}.hero{padding:40px 0 34px}}
+.producto,h2[id],h3[id]{scroll-margin-top:80px}

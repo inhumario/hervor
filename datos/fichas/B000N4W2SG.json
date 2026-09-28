@@ -1,0 +1,37 @@
+{
+ "titulo": "Chemex papel filtro Plaza dobladas 100 piezas 5-10 tazas",
+ "marca": "Marca: Chemex",
+ "vinetas": [
+  "Paso 1: Coloque el embudo en la parte superior de la cafetera CHEMEX, con 3 capas en el lado de la ranura. La ranura es una salida de aire (y también el pico vertedor) y permite que el aire escape de la parte inferior de la cafetera, dejando que el café se filtre.",
+  "Paso 2: Ponga café en el cono de papel de filtro. Use una cucharada colmada por taza de café (ajústelo al gusto personal si es necesario después de la primera preparación). Consulte las instrucciones de preparación para conocer los pasos restantes.",
+  "MÁS GRUESO: 20-30 % más grueso que la competencia, el diseño de filtro de fibra especial mantiene los elementos amargos, aceites y posos en su lugar (y fuera de su taza)",
+  "Se adapta a todas las cafeteras CHEMEX excepto CM-1, CM-1C, CM-1GH"
+ ],
+ "detalles": {
+  "Material": "Vidrio",
+  "Marca": "Chemex",
+  "Forma": "Cono",
+  "Número de piezas": "1",
+  "Dispositivos compatibles": "Cafetera",
+  "Número de unidades": "100.0 Conteo",
+  "Nombre del tamaño del paquete": "100 unidades",
+  "Fabricante": "CHEMEX (Kemekkusu)",
+  "tamaño del filtro de café": "#6",
+  "UPC": "699234004337 716080029335 791769442667 858043003614 642008016135 028068001074 015400853149",
+  "Total del paquete según la medida elegida para referenciar precio": "100.0 Conteo",
+  "Núm. de identificación comercial global": "00028068001074, 04526765003101",
+  "Nombre del tipo de artículo": "Filtro de café",
+  "Peso Artículo": "544 g",
+  "Número de modelo": "FS-100",
+  "Número de pieza del fabricante": "E038168H",
+  "Clasificación en los más vendidos de Amazon": "nº16.710 en Hogar y cocina (Ver el Top 100 en Hogar y cocina) nº18 en Filtros desechables para café",
+  "ASIN": "B000N4W2SG",
+  "Valoración media de los clientes": "4,8 4,8 de 5 estrellas (8.701) var dpAcrHasRegisteredArcLinkClickAction; P.when('A', 'ready').execute(function(A) { if (dpAcrHasRegisteredArcLinkClickAction !== true) { dpAcrHasRegisteredArcLinkClickAction = true; A.declarative( 'acrLink-click-metrics', 'click', { \"allowLinkDefault\": true }, function (event) { if (window.ue) { ue.count(\"acrLinkClickCount\", (ue.count(\"acrLinkClickCount\") || 0) + 1); } } ); } }); P.when('A', 'cf').execute(function(A) { A.declarative('acrStarsLink-click-metrics', 'click', { \"allowLinkDefault\" : true }, function(event){ if(window.ue) { ue.count(\"acrStarsLinkWithPopoverClickCount\", (ue.count(\"acrStarsLinkWithPopoverClickCount\") || 0) + 1); } }); }); 4,8 de 5 estrellas",
+  "Material o tela": "Vidrio"
+ },
+ "estrellas": "4,8 de 5 estrellas",
+ "resenas": "(8.701)",
+ "precio": "21,89€",
+ "disponibilidad": "En stock                 {\"isInternal\":false,\"showInsightsHub\":false,\"isRobot\":false,\"showFaceout\":true,\"merchantId\":\"A2AC4PMSMPDXDI\",\"availableBadges\":\"\",\"loggedIn\":true,\"asin\":\"B000N4W2SG\",\"showBadge\":false,\"ingressFaceout\":\"\",\"availableFaceouts\":\"TK_BOUGHT\"}",
+ "asin": "B000N4W2SG"
+}

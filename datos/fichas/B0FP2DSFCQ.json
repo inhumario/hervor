@@ -1,0 +1,43 @@
+{
+ "titulo": "CREATE/KETTLE RETRO PRO/Hervidor eléctrico de 1 L con control de temperatura verde sage/Sistema de auto - apagado, ebullición rápida, base antideslizante, panel transparente, 1200W",
+ "marca": "",
+ "vinetas": [
+  "?? |A CUALQUIER HORA|Por la mañana calienta fácilmente el agua del café o té para despertarte con energía. a mediodía hierve rápidamente el agua para cocinar y. por la noche. prepara tus infusiones en apenas unos segundos.",
+  "??? | PANEL TRANSPARENTE |Su panel transparente te permite apreciar de un vistazo el nivel de agua y. con su base con sistema recoge-cables podrás mantener tu cocina siempre ordenada.",
+  "??? | TEMPERATURA A TU GUSTO |Desde su pantalla digital podrás elegir la temperatura exacta que quieres para tus bebidas. pudiendo elegir entre 40 y 100 ºC en intervalos de 10 ºC. Desde infusiones delicadas hasta un café bien caliente. ideal para preparar las bebidas como más te gusten.",
+  "??| MATERIAL RESISTENTE |No te preocupes por los posibles rastros de olores ni sabores que pueden dejar otras teteras eléctricas. esta es de acero inoxidable de calidad alimentaria y totalmente libre de BPA. para que puedas cuidar tu salud en cada taza y con el mejor sabor.",
+  "??? | SISTEMA DE SEGURIDAD |La seguridad es lo más importante. por eso incluye un sistema de auto-apagado y otro de protección en seco para cuando se queda sin agua."
+ ],
+ "detalles": {
+  "Marca": "CREATE",
+  "Material": "Acero inoxidable",
+  "Capacidad": "1 Litros",
+  "Color": "Verde Sage Pro",
+  "Función especial": "Control de temperatura, sistema de auto-apagado y panel transparente",
+  "Información del paquete": "Caldera",
+  "Voltaje": "240 Voltios",
+  "Dimensiones del producto": "21,7l. x 17,3an. x 17,3al. centímetros",
+  "Vataje": "1200 vatios",
+  "Nombre del modelo": "KETTLE RETRO PRO",
+  "País de origen": "España",
+  "Nombre Modelo": "KETTLE RETRO PRO",
+  "Número Modelo": "210530_580504",
+  "Número de Artículos": "1",
+  "Fabricante": "CREATE",
+  "Total del paquete según la medida elegida para referenciar precio": "1.0 Conteo",
+  "Clasificación en los más vendidos de Amazon": "nº2.315 en Hogar y cocina (Ver el Top 100 en Hogar y cocina) nº11 en Hervidores eléctricos",
+  "ASIN": "B0FP2DSFCQ",
+  "Valoración media de los clientes": "4,3 4,3 de 5 estrellas (731) var dpAcrHasRegisteredArcLinkClickAction; P.when('A', 'ready').execute(function(A) { if (dpAcrHasRegisteredArcLinkClickAction !== true) { dpAcrHasRegisteredArcLinkClickAction = true; A.declarative( 'acrLink-click-metrics', 'click', { \"allowLinkDefault\": true }, function (event) { if (window.ue) { ue.count(\"acrLinkClickCount\", (ue.count(\"acrLinkClickCount\") || 0) + 1); } } ); } }); P.when('A', 'cf').execute(function(A) { A.declarative('acrStarsLink-click-metrics', 'click', { \"allowLinkDefault\" : true }, function(event){ if(window.ue) { ue.count(\"acrStarsLinkWithPopoverClickCount\", (ue.count(\"acrStarsLinkWithPopoverClickCount\") || 0) + 1); } }); }); 4,3 de 5 estrellas",
+  "Características Especiales": "Control de temperatura, sistema de auto-apagado y panel transparente",
+  "Tipo Envase": "Caldera",
+  "Tensión": "240 Voltios",
+  "Potencia": "1200 vatios",
+  "Dimensiones del artículo (largo x ancho x alto)": "21,7l. x 17,3an. x 17,3al. centímetros",
+  "Peso Artículo": "1,95 kg"
+ },
+ "estrellas": "4,3 de 5 estrellas",
+ "resenas": "(731)",
+ "precio": "45,95€",
+ "disponibilidad": "En stock",
+ "asin": "B0FP2DSFCQ"
+}

@@ -1,0 +1,16 @@
+{
+  "url": "https://hervor.inhumario.com",
+  "titulo": "Hervor — Café y té en casa: guías y comparativas honestas",
+  "descripcion": "Guías y comparativas de cafeteras, molinillos, hervidores y teteras para hacer buen café y buen té en casa, escritas por alguien que lleva 25 años en el sector.",
+  "amazon_tag": "",
+  "version": "1",
+  "autor": {
+    "nombre": "Mario Cuadrado",
+    "bio_corta": "Lleva más de 25 años en el mundo del té y el café como fundador de una empresa de tés e infusiones en Toledo. En Hervor cuenta qué equipo merece la pena para hacer buen café y buen té en casa y cuál no."
+  },
+  "categorias": [
+    {"slug": "cafe", "nombre": "Café", "descripcion": "Cafeteras, molinillos y métodos para hacer buen café en casa: qué comprar según cómo lo tomas y cuánto quieres gastar."},
+    {"slug": "te", "nombre": "Té", "descripcion": "Hervidores, teteras, infusores y termos para preparar el té como toca: temperatura, tiempo y el equipo justo."},
+    {"slug": "accesorios", "nombre": "Accesorios", "descripcion": "Básculas, espumadores, tazas y el resto de pequeñas cosas que marcan la diferencia en la taza."}
+  ]
+}
