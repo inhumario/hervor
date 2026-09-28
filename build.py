@@ -197,6 +197,8 @@ def main():
     if DIST.exists():
         shutil.rmtree(DIST)
     shutil.copytree(RAIZ / 'static', DIST / 'static')
+    for clave in (RAIZ / 'static').glob('*.txt'):  # clave de IndexNow: tiene que ir en la raíz
+        shutil.copy(clave, DIST / clave.name)
 
     articulos = []
     for f in sorted((RAIZ / 'content/articulos').glob('*.md')):

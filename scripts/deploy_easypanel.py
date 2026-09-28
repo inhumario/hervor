@@ -98,15 +98,7 @@ def preparar():
                                           "repo": f"https://github.com/{REPO}.git", "ref": "main", "path": "/"})
     trpc("services.app.updateBuild", {"projectName": PROJECT, "serviceName": SERVICE,
                                       "build": {"type": "dockerfile", "file": "Dockerfile"}})
-    dominios = trpc("domains.listDomains", {"projectName": PROJECT, "serviceName": SERVICE})["json"]
-    if not any(d.get("host") == HOST for d in dominios):
-        trpc("domains.createDomain", {
-            "id": "c" + "".join(secrets.choice(string.ascii_lowercase + string.digits) for _ in range(24)),
-            "destinationType": "service", "host": HOST, "https": True, "path": "/", "middlewares": [],
-            "certificateResolver": "letsencrypt", "wildcard": False,
-            "serviceDestination": {"protocol": "http", "port": 80, "projectName": PROJECT, "serviceName": SERVICE}})
-        print(f"easypanel: dominio {HOST}")
-
+    # DNS antes que el dominio: si EasyPanel pide el certificado sin DNS, se queda con el autofirmado
     cf = get_secrets("cloudflare")["CLOUDFLARE_API_TOKEN"]
     base = f"https://api.cloudflare.com/client/v4/zones/{ZONA_INHUMARIO}/dns_records"
     auth = {"Authorization": f"Bearer {cf}"}
@@ -118,6 +110,15 @@ def preparar():
     else:
         http(base, cuerpo, auth)
     print(f"dns: {HOST} -> {IP_EASYPANEL}")
+    dominios = trpc("domains.listDomains", {"projectName": PROJECT, "serviceName": SERVICE})["json"]
+    if not any(d.get("host") == HOST for d in dominios):
+        trpc("domains.createDomain", {
+            "id": "c" + "".join(secrets.choice(string.ascii_lowercase + string.digits) for _ in range(24)),
+            "destinationType": "service", "host": HOST, "https": True, "path": "/", "middlewares": [],
+            "certificateResolver": "letsencrypt", "wildcard": False,
+            "serviceDestination": {"protocol": "http", "port": 80, "projectName": PROJECT, "serviceName": SERVICE}})
+        print(f"easypanel: dominio {HOST}")
+
 
 
 def main():
