@@ -7,6 +7,7 @@
 - Páginas: Quiénes somos, Cómo elegimos, Afiliación (texto obligatorio de Amazon), Aviso legal, Privacidad y Cookies.
 - Artículos de lanzamiento en `content/articulos/` (comparativas y guías de café, té y accesorios) con productos reales de amazon.es: ≥4,3★, ≥100 opiniones y ficha descargada.
 - Despliegue: GitHub `inhumario/hervor` → EasyPanel `travelia/hervor` → https://hervor.inhumario.com.
+- **Search Console**: propiedad `sc-domain:hervor.inhumario.com` verificada por TXT en tu cuenta de Google y sitemap enviado (`scripts/gsc_alta.py`). **IndexNow** (Bing/Yandex) avisado con las 26 URLs (`scripts/indexnow.py`, repetir tras cada publicación).
 - Vigilante semanal de productos (`scripts/comprobar_asins.py --email`, cron los lunes) que avisa por email si un producto se agota, desaparece o baja de 4★.
 
 ## Depende de Mario: alta en Afiliados de Amazon (10-15 min)
@@ -38,7 +39,6 @@ Hay que hacerla con tu identidad (acepta el contrato y la entrevista fiscal), as
 
 ## Siguiente fase (cuando haya tag)
 
-1. **Indexación**: dar de alta la propiedad en Google Search Console y enviar el sitemap (el token de GSC es de Aromas; necesita verificación por DNS del subdominio, que ya controlamos).
-2. **Ritmo de publicación**: 2 artículos nuevos por semana (búsquedas long-tail: «mejor cafetera italiana para inducción», «tetera para té matcha», «molinillo para espresso barato»…).
-3. **Con 3 ventas → PA-API**: imágenes y precios en vivo en las fichas, que suben mucho la conversión.
-4. **Dominio propio** cuando el tráfico lo justifique: cambiar `url` en `config.json`, añadir dominio en EasyPanel y redirección 301 desde el subdominio.
+1. **Ritmo de publicación**: 2 artículos nuevos por semana (búsquedas long-tail: «mejor cafetera italiana para inducción», «tetera para té matcha», «molinillo para espresso barato»…).
+2. **Con 3 ventas → PA-API**: imágenes y precios en vivo en las fichas, que suben mucho la conversión.
+3. **Dominio propio** cuando el tráfico lo justifique: cambiar `url` en `config.json`, añadir dominio en EasyPanel y redirección 301 desde el subdominio.
