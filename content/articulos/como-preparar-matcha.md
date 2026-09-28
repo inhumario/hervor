@@ -1,6 +1,6 @@
 ---
 titulo: "Cómo preparar matcha en casa: paso a paso, gramos y kit"
-titulo_seo: "Cómo preparar matcha: paso a paso y qué kit comprar — Hervor"
+titulo_seo: "Cómo preparar matcha: paso a paso y qué kit comprar"
 descripcion: "Cómo preparar matcha bien: gramos, temperatura del agua, batido en W, usucha y koicha, qué kit comprar y cómo cuidar el chasen para que dure. Sin grumos."
 resumen: "Gramos, agua, batido en W y el kit justo para hacer un matcha con espuma fina y sin grumos."
 categoria: te

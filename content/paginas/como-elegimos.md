@@ -1,7 +1,7 @@
 ---
 titulo: Cómo elegimos los productos
 slug: como-elegimos
-descripcion: "El método de Hervor para seleccionar cafeteras, molinillos, hervidores y teteras: fichas del fabricante, opiniones de compradores y criterio del sector."
+descripcion: "El método de Punto de Infusión para seleccionar cafeteras, molinillos, hervidores y teteras: fichas del fabricante, opiniones de compradores y criterio del sector."
 ---
 Queremos que sepas exactamente de dónde sale cada recomendación. Esto es lo que hacemos y lo que no.
 

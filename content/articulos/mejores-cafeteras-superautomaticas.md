@@ -1,6 +1,6 @@
 ---
 titulo: Las mejores cafeteras superautomáticas para casa
-titulo_seo: Mejores cafeteras superautomáticas (2026) — Hervor
+titulo_seo: Mejores cafeteras superautomáticas (2026)
 descripcion: Comparativa de cafeteras superautomáticas Philips y De'Longhi por sistema de leche, limpieza, molinillo y coste por taza. Acierta según cómo tomas el café.
 resumen: Seis superautomáticas comparadas por sistema de leche, limpieza y facilidad de uso, de la más sencilla a la más completa.
 categoria: cafe

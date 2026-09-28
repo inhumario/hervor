@@ -1,6 +1,6 @@
 ---
 titulo: Qué molienda de café usar según tu cafetera
-titulo_seo: Molienda de café según la cafetera — Hervor
+titulo_seo: Molienda de café según la cafetera
 descripcion: "Qué molienda usar para espresso, italiana, filtro, émbolo, turco o cold brew: tabla de referencia, cómo ajustar el molinillo y los errores más comunes."
 resumen: La tabla de molienda para cada método, cómo corregirla probando la taza y los fallos que más estropean el café.
 categoria: cafe

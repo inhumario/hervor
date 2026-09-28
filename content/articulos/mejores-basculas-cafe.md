@@ -1,6 +1,6 @@
 ---
 titulo: Las mejores básculas de café con temporizador
-titulo_seo: Mejores básculas de café con temporizador (2026) — Hervor
+titulo_seo: Mejores básculas de café con temporizador (2026)
 descripcion: Qué báscula de café con temporizador comprar para espresso o filtro (precisión de 0,1 g, auto-tara, ratio y batería). Siete modelos comparados sin rodeos.
 resumen: Pesar el café y el agua es el cambio más barato que mejora la taza. Estas son las básculas que merecen la pena.
 categoria: accesorios

@@ -1,6 +1,6 @@
 ---
 titulo: Las mejores cafeteras de goteo para casa
-titulo_seo: Mejores cafeteras de goteo (2026) — Hervor
+titulo_seo: Mejores cafeteras de goteo (2026)
 descripcion: Comparativa de cafeteras de goteo eléctricas y manuales, de Melitta a Cecotec o Bodum. Jarra térmica o de cristal, programables y cómo sacarles buen café.
 resumen: Siete cafeteras de filtro comparadas, de la pequeña para uno a la programable para toda la familia, con trucos para que el café salga mejor.
 categoria: cafe

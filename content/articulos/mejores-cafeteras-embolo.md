@@ -1,6 +1,6 @@
 ---
 titulo: Las mejores cafeteras de émbolo (prensa francesa)
-titulo_seo: Mejores cafeteras de émbolo y prensa francesa (2026) — Hervor
+titulo_seo: Mejores cafeteras de émbolo y prensa francesa (2026)
 descripcion: "Cafeteras de émbolo comparadas, de vidrio y de acero térmico, de 240 ml a 1 litro, y cómo preparar una prensa francesa sin posos ni amargor en la taza."
 resumen: Siete prensas francesas para casa, viaje o familia, y la receta para que el café salga limpio.
 categoria: cafe

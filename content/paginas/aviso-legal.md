@@ -1,7 +1,7 @@
 ---
 titulo: Aviso legal
 slug: aviso-legal
-descripcion: "Aviso legal de Hervor: datos del titular del sitio web y condiciones de uso."
+descripcion: "Aviso legal de Punto de Infusión: datos del titular del sitio web y condiciones de uso."
 noindex: true
 ---
 ## Titular del sitio web
@@ -12,17 +12,17 @@ En cumplimiento de la Ley 34/2002, de Servicios de la Sociedad de la Informació
 - **NIF**: 14302271C
 - **Domicilio**: Calle Marchanilla, 3 — 45100 Sonseca (Toledo), España
 - **Correo electrónico**: hola@inhumario.com
-- **Sitio web**: hervor.inhumario.com
+- **Sitio web**: puntodeinfusion.inhumario.com
 
 ## Objeto
 
-Hervor es una web informativa sobre preparación de café y té en casa que publica guías y comparativas de productos. Incluye enlaces de afiliado al Programa de Afiliados de Amazon EU (ver [Afiliación](/afiliacion/)).
+Punto de Infusión es una web informativa sobre preparación de café y té en casa que publica guías y comparativas de productos. Incluye enlaces de afiliado al Programa de Afiliados de Amazon EU (ver [Afiliación](/afiliacion/)).
 
 ## Condiciones de uso
 
 El acceso a esta web es gratuito y no requiere registro. El usuario se compromete a hacer un uso adecuado de los contenidos.
 
-La información publicada tiene carácter orientativo. Las características, precios y disponibilidad de los productos dependen de sus fabricantes y vendedores; la información válida es la que figura en la tienda en el momento de la compra. Hervor no vende productos ni interviene en las compras, que se realizan directamente con el vendedor correspondiente.
+La información publicada tiene carácter orientativo. Las características, precios y disponibilidad de los productos dependen de sus fabricantes y vendedores; la información válida es la que figura en la tienda en el momento de la compra. Punto de Infusión no vende productos ni interviene en las compras, que se realizan directamente con el vendedor correspondiente.
 
 ## Propiedad intelectual
 

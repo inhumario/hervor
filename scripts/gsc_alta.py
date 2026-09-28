@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Alta de hervor.inhumario.com en Search Console (propiedad de dominio verificada por TXT) y envío del sitemap.
+"""Alta de puntodeinfusion.inhumario.com en Search Console (propiedad de dominio verificada por TXT) y envío del sitemap.
 Token OAuth de Mario en ~/.config/aromas/google_token.json (scopes webmasters + siteverification)."""
 import json, sys, time, urllib.parse, urllib.request
 from pathlib import Path
@@ -8,7 +8,7 @@ from google.auth.transport.requests import Request
 sys.path.insert(0, str(Path.home() / '.config/aromas'))
 from infisical_get import get_secrets
 
-HOST = 'hervor.inhumario.com'; SITE = f'sc-domain:{HOST}'; ZONA = '1e0d6a02e9584299ad53dba4bdb79699'
+HOST = 'puntodeinfusion.inhumario.com'; SITE = f'sc-domain:{HOST}'; ZONA = '1e0d6a02e9584299ad53dba4bdb79699'
 c = Credentials.from_authorized_user_info(json.load(open(Path.home() / '.config/aromas/google_token.json'))); c.refresh(Request())
 
 def g(url, data=None, method=None):
@@ -25,7 +25,7 @@ def cfapi(m, p, d=None):
                                  data=json.dumps(d).encode() if d else None, headers={'Authorization': 'Bearer ' + cf, 'Content-Type': 'application/json'})
     with urllib.request.urlopen(req) as r: return json.load(r)['result']
 if not any(r['content'].strip('"') == tok for r in cfapi('GET', f'/dns_records?type=TXT&name={HOST}')):
-    cfapi('POST', '/dns_records', {'type': 'TXT', 'name': 'hervor', 'content': tok, 'ttl': 300, 'comment': 'Verificación Search Console Hervor'})
+    cfapi('POST', '/dns_records', {'type': 'TXT', 'name': HOST.split('.')[0], 'content': tok, 'ttl': 300, 'comment': 'Verificación Search Console Punto de Infusión'})
     print('TXT creado; esperando propagación'); time.sleep(45)
 for intento in range(6):
     try:

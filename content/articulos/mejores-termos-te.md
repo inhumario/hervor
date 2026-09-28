@@ -1,6 +1,6 @@
 ---
 titulo: Los mejores termos para té con infusor
-titulo_seo: "Mejores termos para té con infusor (2026) — Hervor"
+titulo_seo: "Mejores termos para té con infusor (2026)"
 descripcion: "Termos y tazas térmicas con infusor para llevarte el té de hoja a la oficina o de ruta sin que amargue. Qué mirar, cómo usarlos bien y seis modelos."
 resumen: "Seis termos y tazas térmicas con infusor para llevar té de hoja, y el truco para que no se pase."
 categoria: te

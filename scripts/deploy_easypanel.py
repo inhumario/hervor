@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Publica Hervor: commit + push a GitHub (inhumario/hervor) y redeploy en EasyPanel (travelia/hervor).
+Publica Punto de Infusión (carpeta/repo/servicio se llaman hervor por su primer nombre): commit + push a GitHub (inhumario/hervor) y redeploy en EasyPanel (travelia/hervor).
 
 Uso:
   python3 scripts/deploy_easypanel.py            # primera vez: repo, servicio, dominio, DNS y deploy
@@ -16,6 +16,7 @@ import secrets
 import string
 import subprocess
 import sys
+import time
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -25,7 +26,8 @@ from infisical_get import get_secrets  # noqa: E402
 
 RAIZ = Path(__file__).resolve().parent.parent
 PROJECT, SERVICE, REPO = "travelia", "hervor", "inhumario/hervor"
-HOST = "hervor.inhumario.com"
+HOST = "puntodeinfusion.inhumario.com"
+HOSTS = ["puntodeinfusion.inhumario.com", "hervor.inhumario.com"]  # el segundo redirige 301 (nginx.conf)
 ZONA_INHUMARIO = "1e0d6a02e9584299ad53dba4bdb79699"
 IP_EASYPANEL = "46.202.168.58"
 
@@ -80,7 +82,7 @@ def preparar():
     tok = token_github()
     try:
         http("https://api.github.com/user/repos",
-             {"name": "hervor", "private": False, "description": "Hervor — café y té en casa (web estática)"},
+             {"name": "hervor", "private": False, "description": "Punto de Infusión — café y té en casa (web estática)"},
              {"Authorization": f"Bearer {tok}", "Accept": "application/vnd.github+json"})
         print("github: repo creado")
     except urllib.error.HTTPError as e:
@@ -102,23 +104,26 @@ def preparar():
     cf = get_secrets("cloudflare")["CLOUDFLARE_API_TOKEN"]
     base = f"https://api.cloudflare.com/client/v4/zones/{ZONA_INHUMARIO}/dns_records"
     auth = {"Authorization": f"Bearer {cf}"}
-    existentes = http(f"{base}?name={HOST}", headers=auth, method="GET")["result"]
-    cuerpo = {"type": "A", "name": "hervor", "content": IP_EASYPANEL, "proxied": False, "ttl": 300,
-              "comment": "Hervor (web de afiliados) en EasyPanel travelia/hervor"}
-    if existentes:
-        http(f"{base}/{existentes[0]['id']}", cuerpo, auth, "PUT")
-    else:
-        http(base, cuerpo, auth)
-    print(f"dns: {HOST} -> {IP_EASYPANEL}")
-    dominios = trpc("domains.listDomains", {"projectName": PROJECT, "serviceName": SERVICE})["json"]
-    if not any(d.get("host") == HOST for d in dominios):
-        trpc("domains.createDomain", {
-            "id": "c" + "".join(secrets.choice(string.ascii_lowercase + string.digits) for _ in range(24)),
-            "destinationType": "service", "host": HOST, "https": True, "path": "/", "middlewares": [],
-            "certificateResolver": "letsencrypt", "wildcard": False,
-            "serviceDestination": {"protocol": "http", "port": 80, "projectName": PROJECT, "serviceName": SERVICE}})
-        print(f"easypanel: dominio {HOST}")
+    for host in HOSTS:
+        existentes = http(f"{base}?name={host}&type=A", headers=auth, method="GET")["result"]
+        cuerpo = {"type": "A", "name": host.split(".")[0], "content": IP_EASYPANEL, "proxied": False, "ttl": 300,
+                  "comment": "Punto de Infusión (web de afiliados) en EasyPanel travelia/hervor"}
+        if existentes:
+            http(f"{base}/{existentes[0]['id']}", cuerpo, auth, "PUT")
+        else:
+            http(base, cuerpo, auth)
+        print(f"dns: {host} -> {IP_EASYPANEL}")
+    time.sleep(20)
 
+    dominios = trpc("domains.listDomains", {"projectName": PROJECT, "serviceName": SERVICE})["json"]
+    for host in HOSTS:
+        if not any(d.get("host") == host for d in dominios):
+            trpc("domains.createDomain", {
+                "id": "c" + "".join(secrets.choice(string.ascii_lowercase + string.digits) for _ in range(24)),
+                "destinationType": "service", "host": host, "https": True, "path": "/", "middlewares": [],
+                "certificateResolver": "letsencrypt", "wildcard": False,
+                "serviceDestination": {"protocol": "http", "port": 80, "projectName": PROJECT, "serviceName": SERVICE}})
+            print(f"easypanel: dominio {host}")
 
 
 def main():

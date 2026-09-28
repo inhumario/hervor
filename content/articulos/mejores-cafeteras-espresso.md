@@ -1,6 +1,6 @@
 ---
 titulo: Las mejores cafeteras espresso de brazo para casa
-titulo_seo: Mejores cafeteras espresso de brazo (2026) — Hervor
+titulo_seo: Mejores cafeteras espresso de brazo (2026)
 descripcion: Comparativa de cafeteras espresso con portafiltro para casa, de la De'Longhi Stilosa a modelos con molinillo y PID. Qué mirar y cuál elegir según tu nivel.
 resumen: Seis cafeteras de brazo para hacer espresso en casa, desde la más sencilla hasta una con molinillo integrado.
 categoria: cafe

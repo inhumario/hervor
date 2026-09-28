@@ -1,6 +1,6 @@
 ---
 titulo: "Temperatura del agua para el té: tabla con tiempos y gramos"
-titulo_seo: "Temperatura del agua para el té: tabla completa — Hervor"
+titulo_seo: "Temperatura del agua para el té: tabla completa"
 descripcion: "A qué temperatura, cuánto tiempo y cuántos gramos para cada té: blanco, verde, oolong, negro, pu-erh, rooibos y matcha. Con trucos si no tienes hervidor."
 resumen: "La tabla de temperatura, tiempo y gramos para cada tipo de té, y cómo acertar sin hervidor regulable."
 categoria: te

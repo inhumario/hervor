@@ -4,7 +4,7 @@ import json, re, urllib.request
 from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 clave = next((RAIZ / 'static').glob('*.txt')).stem
-host = 'hervor.inhumario.com'
+host = 'puntodeinfusion.inhumario.com'
 urls = re.findall(r'<loc>([^<]+)</loc>', urllib.request.urlopen(f'https://{host}/sitemap.xml').read().decode())
 req = urllib.request.Request('https://api.indexnow.org/indexnow', method='POST', headers={'Content-Type': 'application/json'},
     data=json.dumps({'host': host, 'key': clave, 'keyLocation': f'https://{host}/{clave}.txt', 'urlList': urls}).encode())

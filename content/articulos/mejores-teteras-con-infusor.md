@@ -1,6 +1,6 @@
 ---
 titulo: "Las mejores teteras con infusor: cristal, porcelana y hierro fundido"
-titulo_seo: "Mejores teteras con infusor (2026): cristal y hierro — Hervor"
+titulo_seo: "Mejores teteras con infusor (2026): cristal y hierro"
 descripcion: "Teteras con infusor de cristal, porcelana y hierro fundido tipo tetsubin: cuál elegir según el té que tomas, cuántas tazas haces y cómo cuidar el hierro."
 resumen: "Siete teteras con infusor de cristal, cerámica y hierro fundido, y cómo cuidar un tetsubin para que dure años."
 categoria: te

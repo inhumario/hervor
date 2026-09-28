@@ -38,6 +38,6 @@ print(f'{len(usos)} productos revisados, {len(problemas)} con problemas')
 for x in problemas: print(' -', x)
 if problemas and '--email' in sys.argv:
     from gmail_smtp import send
-    send('cuadrado.mario@aromasdete.com', f'Hervor: {len(problemas)} productos a revisar',
-         'Productos de Hervor que hay que sustituir o revisar:\n\n' + '\n'.join(problemas) +
+    send('cuadrado.mario@aromasdete.com', f'Punto de Infusión: {len(problemas)} productos a revisar',
+         'Productos de Punto de Infusión que hay que sustituir o revisar:\n\n' + '\n'.join(problemas) +
          '\n\nProyecto: ~/Claude/Code/hervor (scripts/comprobar_asins.py)')

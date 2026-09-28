@@ -1,6 +1,6 @@
 ---
 titulo: Los mejores espumadores de leche eléctricos
-titulo_seo: Mejores espumadores de leche eléctricos (2026) — Hervor
+titulo_seo: Mejores espumadores de leche eléctricos (2026)
 descripcion: Espumadores de leche eléctricos de jarra y de varilla comparados. Cuál calienta, cuál va mejor con leche vegetal y cuál compensa para el café diario.
 resumen: De jarra que calienta sola o de varilla de mano. Siete espumadores para tener espuma de cafetería sin máquina de espresso.
 categoria: accesorios

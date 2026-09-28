@@ -4,7 +4,7 @@ import re, sys
 from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 arts = {f.stem: f.read_text() for f in (RAIZ / 'content/articulos').glob('*.md')}
-paginas = {'sobre-hervor', 'como-elegimos', 'afiliacion', 'aviso-legal', 'privacidad', 'cookies', 'cafe', 'te', 'accesorios', ''}
+paginas = {'quienes-somos', 'como-elegimos', 'afiliacion', 'aviso-legal', 'privacidad', 'cookies', 'cafe', 'te', 'accesorios', ''}
 fallos = 0
 for slug, t in sorted(arts.items()):
     cuerpo = t.split('\n---\n', 1)[-1]

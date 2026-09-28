@@ -1,6 +1,6 @@
 ---
 titulo: Café de filtro en casa. V60, Chemex y AeroPress paso a paso
-titulo_seo: Café de filtro en casa. V60, Chemex y AeroPress — Hervor
+titulo_seo: Café de filtro en casa. V60, Chemex y AeroPress
 descripcion: Cómo hacer café de filtro en casa con V60, Chemex y AeroPress. Proporciones, molienda, temperatura del agua, paso a paso y qué equipo comprar para empezar.
 resumen: Ratio, molienda, temperatura y receta paso a paso para los tres métodos de filtro manual más populares, y qué comprar para empezar.
 categoria: cafe

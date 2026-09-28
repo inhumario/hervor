@@ -1,6 +1,6 @@
 ---
 titulo: Los mejores molinillos de café manuales
-titulo_seo: Mejores molinillos de café manuales (2026) — Hervor
+titulo_seo: Mejores molinillos de café manuales (2026)
 descripcion: "Comparativa de molinillos de café manuales de muelas para espresso, filtro o prensa francesa: qué mirar en el ajuste y qué modelos merecen la pena."
 resumen: Siete molinillos de mano, de los baratos de cerámica a los de metal para espresso, y cómo acertar según tu cafetera.
 categoria: cafe

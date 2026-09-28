@@ -1,6 +1,6 @@
 ---
 titulo: Las mejores tazas de cristal de doble pared
-titulo_seo: Mejores tazas de cristal de doble pared (2026) — Hervor
+titulo_seo: Mejores tazas de cristal de doble pared (2026)
 descripcion: Tazas y vasos de cristal de doble pared para espresso, cappuccino y té. Qué tamaño elegir y cuáles van al lavavajillas o al microondas según su ficha.
 resumen: Mantienen el calor, no queman los dedos y dejan ver el café. Siete juegos de doble pared, del espresso al tazón de té.
 categoria: accesorios

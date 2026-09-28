@@ -1,6 +1,6 @@
 ---
 titulo: Las mejores cafeteras italianas
-titulo_seo: Mejores cafeteras italianas y para inducción (2026) — Hervor
+titulo_seo: Mejores cafeteras italianas y para inducción (2026)
 descripcion: "Cafeteras italianas comparadas, de aluminio y de acero, para gas, vitro o inducción: cuántas tazas elegir, cómo hacerla bien y qué modelos merecen la pena."
 resumen: Siete cafeteras moka, de la Bialetti de siempre a las de acero para inducción, y cómo acertar con el tamaño.
 categoria: cafe

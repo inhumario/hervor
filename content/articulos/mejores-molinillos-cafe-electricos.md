@@ -1,6 +1,6 @@
 ---
 titulo: Los mejores molinillos de café eléctricos
-titulo_seo: Mejores molinillos de café eléctricos de muelas (2026) — Hervor
+titulo_seo: Mejores molinillos de café eléctricos de muelas (2026)
 descripcion: "Molinillos de café eléctricos de muelas comparados, de los de goteo a los que muelen al portafiltro, y por qué las cuchillas no dan una molienda pareja."
 resumen: Siete molinillos eléctricos para espresso, filtro o italiana, y la diferencia real entre muelas y cuchillas.
 categoria: cafe

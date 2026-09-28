@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Genera la web estática de Hervor en dist/.
+"""Genera la web estática de Punto de Infusión en dist/.
 
     python3 build.py            # construye dist/
     python3 build.py --serve    # construye y sirve en http://localhost:8088
@@ -144,11 +144,11 @@ def pagina(titulo, descripcion, ruta, contenido, schema=None, tipo_og='website',
 <meta property="og:title" content="{esc(titulo)}">
 <meta property="og:description" content="{esc(descripcion)}">
 <meta property="og:url" content="{canon}">
-<meta property="og:site_name" content="Hervor">
+<meta property="og:site_name" content="Punto de Infusión">
 <meta property="og:locale" content="es_ES">
 <meta property="og:image" content="{URL}/static/og.png">
 <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
-<link rel="alternate" type="application/rss+xml" title="Hervor" href="/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Punto de Infusión" href="/feed.xml">
 <link rel="preload" href="/static/fuentes/inter-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/static/estilo.css?v={CFG.get('version', '1')}">
 {ld}
@@ -156,9 +156,9 @@ def pagina(titulo, descripcion, ruta, contenido, schema=None, tipo_og='website',
 <body>
 <header class="cab">
   <div class="contenedor cab-in">
-    <a class="logo" href="/"><img src="/static/favicon.svg" alt="" width="28" height="28">Hervor</a>
+    <a class="logo" href="/"><img src="/static/favicon.svg" alt="" width="28" height="28">Punto de Infusión</a>
     <input type="checkbox" id="menu" hidden><label for="menu" class="menu-btn" aria-label="Menú">☰</label>
-    <nav>{nav}<a href="/sobre-hervor/">Quiénes somos</a></nav>
+    <nav>{nav}<a href="/quienes-somos/">Quiénes somos</a></nav>
   </div>
 </header>
 <main>
@@ -166,9 +166,9 @@ def pagina(titulo, descripcion, ruta, contenido, schema=None, tipo_og='website',
 </main>
 <footer class="pie">
   <div class="contenedor">
-    <p class="pie-marca"><strong>Hervor</strong> · Café y té en casa, bien hechos.</p>
+    <p class="pie-marca"><strong>Punto de Infusión</strong> · Café y té en casa, en su punto.</p>
     <p class="pie-aviso">{AVISO_AFILIADO} Los precios y la disponibilidad cambian; el precio válido es el que marca Amazon al comprar.</p>
-    <p class="pie-links"><a href="/sobre-hervor/">Quiénes somos</a><a href="/como-elegimos/">Cómo elegimos</a><a href="/afiliacion/">Afiliación</a><a href="/aviso-legal/">Aviso legal</a><a href="/privacidad/">Privacidad</a><a href="/cookies/">Cookies</a></p>
+    <p class="pie-links"><a href="/quienes-somos/">Quiénes somos</a><a href="/como-elegimos/">Cómo elegimos</a><a href="/afiliacion/">Afiliación</a><a href="/aviso-legal/">Aviso legal</a><a href="/privacidad/">Privacidad</a><a href="/cookies/">Cookies</a></p>
   </div>
 </footer>
 </body>
@@ -210,8 +210,8 @@ def main():
         articulos.append(meta)
     articulos.sort(key=lambda a: (str(a['actualizado']), a['titulo']), reverse=True)
     autor = CFG['autor']
-    persona = {'@type': 'Person', 'name': autor['nombre'], 'url': URL + '/sobre-hervor/'}
-    organizacion = {'@type': 'Organization', 'name': 'Hervor', 'url': URL + '/',
+    persona = {'@type': 'Person', 'name': autor['nombre'], 'url': URL + '/quienes-somos/'}
+    organizacion = {'@type': 'Organization', 'name': 'Punto de Infusión', 'url': URL + '/',
                     'logo': URL + '/static/favicon.svg'}
 
     for a in articulos:
@@ -226,14 +226,14 @@ def main():
         if len(relacionados) < 3:
             relacionados += [r for r in articulos if r['slug'] != a['slug'] and r not in relacionados][:3 - len(relacionados)]
         aviso = (f'<p class="aviso-art">Este artículo contiene enlaces de afiliado: si compras a través de ellos, '
-                 f'Hervor puede llevarse una pequeña comisión sin que tú pagues más. '
+                 f'Punto de Infusión puede llevarse una pequeña comisión sin que tú pagues más. '
                  f'<a href="/afiliacion/">Cómo funciona</a>.</p>') if a['productos'] else ''
         contenido = f'''
 <article class="contenedor articulo">
   <nav class="migas"><a href="/">Inicio</a> › <a href="/{cat["slug"]}/">{esc(cat["nombre"])}</a></nav>
   <h1>{esc(a["titulo"])}</h1>
   <p class="entradilla">{esc(a["descripcion"])}</p>
-  <p class="meta">Por <a href="/sobre-hervor/">{esc(autor["nombre"])}</a> · Actualizado el {fecha_es(a["actualizado"])}</p>
+  <p class="meta">Por <a href="/quienes-somos/">{esc(autor["nombre"])}</a> · Actualizado el {fecha_es(a["actualizado"])}</p>
   {aviso}
   <div class="cuerpo">{a["html"]}</div>
   {faq_html}
@@ -263,7 +263,7 @@ def main():
         lista = [a for a in articulos if a['categoria'] == c['slug']]
         contenido = f'''<section class="contenedor portada-cat"><h1>{esc(c["nombre"])}</h1><p class="entradilla">{esc(c["descripcion"])}</p>
 <div class="rejilla">{''.join(tarjeta_articulo(a) for a in lista)}</div></section>'''
-        escribir(f'/{c["slug"]}/', pagina(f'{c["nombre"]} — Hervor', c['descripcion'], f'/{c["slug"]}/', contenido))
+        escribir(f'/{c["slug"]}/', pagina(f'{c["nombre"]} — Punto de Infusión', c['descripcion'], f'/{c["slug"]}/', contenido))
 
     # portada
     bloques = ''.join(
@@ -280,18 +280,18 @@ def main():
 </div></section>
 {bloques}'''
     escribir('/', pagina(CFG['titulo'], CFG['descripcion'], '/', portada,
-                         [{'@context': 'https://schema.org', '@type': 'WebSite', 'name': 'Hervor', 'url': URL + '/',
+                         [{'@context': 'https://schema.org', '@type': 'WebSite', 'name': 'Punto de Infusión', 'url': URL + '/',
                            'inLanguage': 'es-ES', 'publisher': organizacion}]))
 
     # páginas fijas
     for f in sorted((RAIZ / 'content/paginas').glob('*.md')):
         meta, cuerpo = leer_md(f)
         contenido = f'<article class="contenedor articulo"><h1>{esc(meta["titulo"])}</h1><div class="cuerpo">{md(cuerpo)}</div></article>'
-        escribir(f'/{meta["slug"]}/', pagina(f'{meta["titulo"]} — Hervor', meta['descripcion'], f'/{meta["slug"]}/',
+        escribir(f'/{meta["slug"]}/', pagina(f'{meta["titulo"]} — Punto de Infusión', meta['descripcion'], f'/{meta["slug"]}/',
                                              contenido, indexar=not meta.get('noindex')))
 
     # 404
-    (DIST / '404.html').write_text(pagina('Página no encontrada — Hervor', 'No existe esta página.', '/404.html',
+    (DIST / '404.html').write_text(pagina('Página no encontrada — Punto de Infusión', 'No existe esta página.', '/404.html',
                                           '<section class="contenedor articulo"><h1>Aquí no hay nada</h1><p>La página no existe o ha cambiado de sitio. <a href="/">Volver a la portada</a>.</p></section>',
                                           indexar=False), encoding='utf-8')
 
@@ -309,7 +309,7 @@ def main():
         f'<description>{esc(a["descripcion"])}</description><pubDate>{date.fromisoformat(str(a["fecha"])).strftime("%a, %d %b %Y 08:00:00 +0200")}</pubDate></item>'
         for a in articulos[:20])
     (DIST / 'feed.xml').write_text(
-        f'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Hervor</title><link>{URL}/</link>'
+        f'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Punto de Infusión</title><link>{URL}/</link>'
         f'<description>{esc(CFG["descripcion"])}</description><language>es-es</language>{items}</channel></rss>', encoding='utf-8')
 
     print(f'dist/: {len(articulos)} artículos, {len(urls)} URLs en el sitemap' + ('' if TAG else '  (SIN etiqueta de afiliado)'))

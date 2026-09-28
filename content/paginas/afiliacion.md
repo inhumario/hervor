@@ -1,9 +1,9 @@
 ---
 titulo: Enlaces de afiliado
 slug: afiliacion
-descripcion: "Cómo funcionan los enlaces de afiliado de Hervor: participamos en el Programa de Afiliados de Amazon EU y recibimos una comisión sin coste para ti."
+descripcion: "Cómo funcionan los enlaces de afiliado de Punto de Infusión: participamos en el Programa de Afiliados de Amazon EU y recibimos una comisión sin coste para ti."
 ---
-Hervor participa en el **Programa de Afiliados de Amazon EU**, un programa de publicidad para afiliados diseñado para ofrecer a sitios web un modo de obtener comisiones por publicidad, publicitando e incluyendo enlaces a Amazon.es.
+Punto de Infusión participa en el **Programa de Afiliados de Amazon EU**, un programa de publicidad para afiliados diseñado para ofrecer a sitios web un modo de obtener comisiones por publicidad, publicitando e incluyendo enlaces a Amazon.es.
 
 **Como Afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables.**
 

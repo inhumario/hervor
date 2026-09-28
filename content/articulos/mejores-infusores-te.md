@@ -1,6 +1,6 @@
 ---
 titulo: Los mejores infusores de té de acero inoxidable
-titulo_seo: Mejores infusores de té de acero inoxidable (2026) — Hervor
+titulo_seo: Mejores infusores de té de acero inoxidable (2026)
 descripcion: Infusores de té de acero para hebra suelta comparados. Cestilla, bola, pinza, taza con filtro y botella, y cuál tiene la malla fina que pide el rooibos.
 resumen: Para pasarte al té a granel solo necesitas un buen infusor. Cestillas, bolas, tazas con filtro y botella, con sus pros y contras.
 categoria: te

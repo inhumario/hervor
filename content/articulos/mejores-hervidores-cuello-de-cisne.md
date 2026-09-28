@@ -1,6 +1,6 @@
 ---
 titulo: Los mejores hervidores de cuello de cisne para café de filtro
-titulo_seo: Mejores hervidores cuello de cisne para café (2026) — Hervor
+titulo_seo: Mejores hervidores cuello de cisne para café (2026)
 descripcion: Hervidores de cuello de cisne eléctricos y de fuego para V60, Chemex y pour over. Control del vertido, temperatura regulable o termómetro. Siete modelos.
 resumen: El vertido lento y dirigido es la mitad de un buen café de filtro. Siete hervidores de cuello de cisne, eléctricos y de fuego.
 categoria: cafe

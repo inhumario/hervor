@@ -1,6 +1,6 @@
 ---
 titulo: "Los mejores hervidores con temperatura regulable para té"
-titulo_seo: "Mejores hervidores con temperatura regulable (2026) — Hervor"
+titulo_seo: "Mejores hervidores con temperatura regulable (2026)"
 descripcion: "Hervidores con temperatura regulable para preparar té verde, blanco, oolong o negro a su punto. Qué mirar, qué evitar y siete modelos que merecen la pena."
 resumen: "Siete hervidores con selector de temperatura para hacer cada té a su punto, del verde japonés al rooibos."
 categoria: te
