@@ -21,7 +21,7 @@ La etiqueta de afiliado va en `config.json` → `amazon_tag` (p. ej. `puntodeinf
 ```markdown
 ---
 titulo: Los mejores molinillos de café manuales
-titulo_seo: Mejores molinillos de café manuales (2026) — Hervor      # opcional, <title>, ≤ 65 caracteres
+titulo_seo: Mejores molinillos de café manuales (2026)      # opcional, <title>, ≤ 65 caracteres
 descripcion: Frase de 140-155 caracteres que sale en Google y como entradilla.
 resumen: Una frase corta para la tarjeta de la portada.
 categoria: cafe            # cafe | te | accesorios
